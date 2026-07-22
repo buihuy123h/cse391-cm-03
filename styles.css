@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cm-primary: #0f766e;
+  --cm-bg: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: var(--cm-bg);
+  color: #1f2937;
+}
+
+.cm-header {
+  background-color: var(--cm-primary);
+  color: white;
+  padding: 1rem;
+}
+
+.cm-header h1 {
+  margin: 0;
+}
+
+.cm-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #115e59;
+}
+
+.cm-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.cm-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--cm-primary);
+}
+
+.cm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cm-table th,
+.cm-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.cm-table thead {
+  background-color: var(--cm-primary);
+  color: white;
+}
+
+.cm-table tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.cm-table tbody tr:hover {
+  background-color: #ccfbf1;
+}
+
+figure {
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--cm-primary);
+}
+
+button[type="submit"] {
+  background-color: var(--cm-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0d9488;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+}
